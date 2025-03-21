@@ -1,0 +1,131 @@
+/* 基本樣式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+/* 頁首 */
+header {
+  padding: 20px;
+  background-color: #6cdcdc;
+  color: white;
+}
+
+/* 口號區 */
+.hero {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.hero h2 {
+  color: #333;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: #6cdcdc;
+  color: rgb(52, 52, 52);
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* 添加平滑過渡效果 */
+}
+
+/* 讓按鈕在 hover 時有互動效果 */
+.button:hover {
+  background-color: #9ee5e9;
+  transform: scale(1.05); /* 放大 1.05 倍 */
+}
+
+/* 產品特色 */
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* 設定區塊間距 */
+  text-align: center;
+}
+
+.feature {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out; /* 添加平滑過渡效果 */
+}
+
+/* 滑鼠懸停時稍微放大 */
+.feature:hover {
+  background-color: #aaf8fc;
+  transform: scale(1.05);
+}
+
+
+/* 響應式設計：當畫面小於 768px 時，自動變為兩欄 */
+@media (max-width: 768px) {
+  .features {
+      flex-wrap: wrap;
+  }
+  .feature {
+      flex: 0 0 48%; /* 兩欄 */
+  }
+}
+
+/* 響應式設計：當畫面小於 480px 時，變為單欄 */
+@media (max-width: 480px) {
+  .feature {
+      flex: 0 0 100%; /* 單欄 */
+  }
+}
+
+
+/* 官方社群 */
+.community {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.social-buttons .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background-color: #6cdcdc;
+  color: rgb(52, 52, 52);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out; /* 添加平滑過渡效果 */
+}
+
+.social-buttons .btn:hover {
+  background-color: #9ee5e9;
+  transform: scale(1.05); /* 放大 1.05 倍 */
+}
+
+/* 搶先體驗 */
+.download {
+  width: 66%; /* 讓區塊寬度為 2/3 畫面 */
+  margin: 0 auto; /* 置中 */
+  text-align: center; /* 讓內文置中 */
+  padding: 40px 20px;
+}
+
+/* 響應式設計：當畫面小於 768px 時，寬度變為 90% 以適應小螢幕 */
+@media (max-width: 768px) {
+  .download {
+      width: 90%;
+  }
+}
+
+
+/* 頁尾 */
+footer {
+  padding: 20px;
+  background-color: rgb(142, 142, 142);
+  color: white;
+}
