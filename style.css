@@ -122,6 +122,15 @@ header {
   }
 }
 
+/* 修改信箱連結的樣式 */
+.contact-link {
+  color: white; /* 文字顏色為白色 */
+  text-decoration: none; /* 移除底線 */
+}
+
+.contact-link:hover {
+  text-decoration: none; /* 滑鼠懸停時也移除底線 */
+}
 
 /* 頁尾 */
 footer {
